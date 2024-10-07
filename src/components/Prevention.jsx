@@ -6,6 +6,7 @@ import { RxCross1 } from "react-icons/rx";
 import Doimg from "../assets/do.png";
 
 const Prevention = () => {
+  
   return (
     <div className="w-full text-center sm:px-20 px-12 py-10 sm:h-screen">
       <h1 className="font-semibold text-purple-700 text-[6vw] sm:text-[3vw]">
@@ -29,7 +30,7 @@ const Prevention = () => {
               ))}
           </div>
 
-          <div className="flex-1 flex flex-col sm:justify-center sm:items-start sm:pl-10 bg-yellow-500/0 gap-y-4 h-full">
+          <div className="flex-1 flex flex-col justify-center items-start sm:pl-10 bg-yellow-500/0 gap-y-4 h-full">
             <h1 className="font-bold text-[6vw] sm:text-[2vw]">You Should Not Do.</h1>
             {NotTodo &&
               NotTodo.map((item, idx) => (

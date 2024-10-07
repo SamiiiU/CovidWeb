@@ -1,18 +1,15 @@
 import React, { useEffect } from 'react'
 import bg from '../assets/hero-bg.png'
+import { initAOS } from '../Animation/AOS';
 import AOS from 'aos';
 
 
 const Hero = () => {
 
-    useEffect(() => {
-        AOS.init({
-            duration : 1000,
-            delay : 0,
-            offset : 200,
-            once : true,
-        })
-    })
+  useEffect(() => {
+    initAOS( 200 , 100 , 1000);
+  }, []);
+
   return (
     <div className='w-screen sm:h-screen sm:px-20 px-12 bg-[#e2f8fa] rounded-br-[25vw] pb-8 pt-20 sm:flex-row flex-col flex justify-center sm:justify-start items-center'>
       <div data-aos="fade-up" className=  'flex-1 flex flex-col gap-y-6 justify-start items-start'>
